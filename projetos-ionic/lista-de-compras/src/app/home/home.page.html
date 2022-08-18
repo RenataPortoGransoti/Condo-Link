@@ -1,6 +1,7 @@
 <ion-content [fullscreen]="true">
-  <div id="posicionamento">
+
     <ion-grid>
+      <div id="posicionamento">
       <ion-row>
         <ion-col size="6">
           <ion-item>
@@ -26,17 +27,11 @@
       <ion-row>
         <ion-col>
           <ion-item  *ngFor = "let elemento_da_lista of variavel_lista;    index as i" >
-
             <ion-grid>
               <ion-row>
-
-
-
                 <ion-col size="6">
                   {{elemento_da_lista}}
                 </ion-col>
-
-
                 <ion-col size="3">
                   {{variavel_lista_preco[i]}}
                 </ion-col>
@@ -48,13 +43,24 @@
                 </ion-col>
               </ion-row>
             </ion-grid>
-
-
-
           </ion-item>
         </ion-col>
       </ion-row>
+
+    </div>
+    <div id="posicao">
+      <ion-row >
+        <ion-col size="9"></ion-col>
+        <ion-col size="3">
+          <ion-button color="dark">
+            Calcular
+            <ion-icon name="cart"></ion-icon>
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </div>
+
     </ion-grid>
 
-  </div>
+
 </ion-content>
