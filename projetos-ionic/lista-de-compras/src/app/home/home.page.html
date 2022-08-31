@@ -33,7 +33,6 @@
                 <ion-col size="3">
                   {{variavel_lista_preco[i]}}
                 </ion-col>
-
                 <ion-col size="3">
                   <ion-button color="danger" size="small" (click)="remove(i)">
                     <ion-icon name="trash-outline"></ion-icon>
@@ -44,19 +43,14 @@
           </ion-item>
         </ion-col>
       </ion-row>
-
-
-
-
     </div>
-
-
     </ion-grid>
-
     <div>
-    <ion-row id="total">
+    <ion-row>
       <ion-col >
-        Total:
+        <ion-item>
+          Total: {{total}}
+        </ion-item>
       </ion-col>
     </ion-row>
   </div>
