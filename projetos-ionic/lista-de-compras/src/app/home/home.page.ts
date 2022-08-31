@@ -13,42 +13,26 @@ export class HomePage {
   variavel_lista_preco = [];
   texto: string = "";
   preco: number;
-  total: number;
+  total: number = 0;
 
   adiciona() {
     if (!(this.texto == "")) {
       this.variavel_lista.push(this.texto);
       this.texto = "";
+      this.variavel_lista_preco.push(this.preco);
+      this.preco = 0;
     }
 
+    this.total = 0;
 
-      if (!(this.preco == 0)) {
-        this.variavel_lista_preco.push(this.preco);
-        this.preco = 0;
-      }
-      else{
-        this.variavel_lista_preco.push(0.00);
-        this.preco = 0;
-      }
-
-      /*
-    if (this.texto == "") {
-    } else{
-      this.variavel_lista.push(this.texto);
-      this.texto = "";
-    }*/
-
-  }
+    for( let i = 0; i< this.variavel_lista_preco.length; i++){
+      this.total = this.total + parseFloat(this.variavel_lista_preco[i]);
+    } }
 
   remove(indice) {
+    this.total = this.total - parseFloat(this.variavel_lista_preco[indice]);
     this.variavel_lista.splice(indice, 1)
     this.variavel_lista_preco.splice(indice, 1)  }
 
-  //*ngFor = "let elemento_da_lista of minhaLista" no item
-  //[(ngModel)]="texto" no input
-
 }
 
-//somar(){
-//this.total = this.preco[i]
-//}
