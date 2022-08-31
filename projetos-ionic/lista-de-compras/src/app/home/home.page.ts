@@ -13,6 +13,7 @@ export class HomePage {
   variavel_lista_preco = [];
   texto: string = "";
   preco: number;
+  total: number;
 
   adiciona() {
     if (!(this.texto == "")) {
@@ -47,3 +48,7 @@ export class HomePage {
   //[(ngModel)]="texto" no input
 
 }
+
+//somar(){
+//this.total = this.preco[i]
+//}
