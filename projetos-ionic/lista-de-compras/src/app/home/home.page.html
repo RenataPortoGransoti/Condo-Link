@@ -20,13 +20,11 @@
             <ion-icon name="save-outline"></ion-icon>
           </ion-button>
         </ion-col>
-
       </ion-row>
-
 
       <ion-row>
         <ion-col>
-          <ion-item  *ngFor = "let elemento_da_lista of variavel_lista;    index as i" >
+          <ion-item  *ngFor = "let elemento_da_lista of variavel_lista;  index as i" >
             <ion-grid>
               <ion-row>
                 <ion-col size="6">
@@ -47,20 +45,19 @@
         </ion-col>
       </ion-row>
 
+
+
+
     </div>
-    <div id="posicao">
-      <ion-row >
-        <ion-col size="9"></ion-col>
-        <ion-col size="3">
-          <ion-button color="dark">
-            Calcular
-            <ion-icon name="cart"></ion-icon>
-          </ion-button>
-        </ion-col>
-      </ion-row>
-    </div>
+
 
     </ion-grid>
 
-
+    <div>
+    <ion-row id="total">
+      <ion-col >
+        Total:
+      </ion-col>
+    </ion-row>
+  </div>
 </ion-content>
