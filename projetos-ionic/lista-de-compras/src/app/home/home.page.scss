@@ -1,14 +1,17 @@
 #posicionamento{
   padding-top: 20%;
   padding-left: 5%;
+  
 }
 
 #posicao{
-  padding-bottom: 10%;
-  padding-right: 35%;
+  padding-right: 45%;
 }
 
-#total{
-  padding-bottom: 1px;
-  padding-right: 0%;
+ion-content{
+  --background: #16b7b7d7;
+}
+
+ion-button{
+ --background: #16b7b762;
 }
